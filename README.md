@@ -2,8 +2,6 @@
 
 AI-based cognitive gaming and memory assistance platform for elderly dementia patients in North East India.
 
-Built for **Smart India Hackathon** — Problem Statement **26003** (MDoNER).
-
 ## Monorepo structure
 
 ```
@@ -187,6 +185,3 @@ Everyone can run `docker compose up` for a consistent backend. Frontends connect
 | `pnpm build:admin` | Production build — admin |
 | `pnpm build:dashboards` | Build both dashboards |
 
-## License
-
-TBD — Smart India Hackathon project.

@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@source "../../../packages/ui/src/**/*.{ts,tsx}";
+
+:root {
+  --color-mist: #f1f5f9;
+  --color-ink: #0f172a;
+  --color-primary: #2563eb;
+  --color-on-primary: #ffffff;
+  --color-sage: #059669;
+  --color-muga: #3b82f6;
+  --color-warning: #d97706;
+  --color-destructive: #dc2626;
+  --color-on-destructive: #ffffff;
+  --color-background: #f1f5f9;
+  --color-foreground: #0f172a;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-muted: #e2e8f0;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+  --color-ring: #2563eb;
+  --color-sidebar: #f8fafc;
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --radius-card: 1.25rem;
+}
+
+@theme inline {
+  --color-mist: var(--color-mist);
+  --color-ink: var(--color-ink);
+  --color-primary: var(--color-primary);
+  --color-on-primary: var(--color-on-primary);
+  --color-sage: var(--color-sage);
+  --color-muga: var(--color-muga);
+  --color-warning: var(--color-warning);
+  --color-destructive: var(--color-destructive);
+  --color-on-destructive: var(--color-on-destructive);
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-card: var(--color-card);
+  --color-card-foreground: var(--color-card-foreground);
+  --color-muted: var(--color-muted);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-ring: var(--color-ring);
+  --color-sidebar: var(--color-sidebar);
+  --font-sans: var(--font-plus-jakarta);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

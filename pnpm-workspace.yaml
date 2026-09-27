@@ -1,0 +1,8 @@
+packages:
+  - "apps/caretaker-dashboard"
+  - "apps/admin-dashboard"
+  - "packages/*"
+
+allowBuilds:
+  sharp: true
+  unrs-resolver: true

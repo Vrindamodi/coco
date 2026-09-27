@@ -1,0 +1,16 @@
+{
+  "name": "coco",
+  "private": true,
+  "scripts": {
+    "dev:backend": "docker compose up backend postgres redis",
+    "dev:caretaker": "pnpm --filter caretaker-dashboard dev",
+    "dev:admin": "pnpm --filter admin-dashboard dev",
+    "dev:dashboards": "pnpm --parallel --filter caretaker-dashboard --filter admin-dashboard dev",
+    "build:caretaker": "pnpm --filter caretaker-dashboard build",
+    "build:admin": "pnpm --filter admin-dashboard build",
+    "build:dashboards": "pnpm --filter caretaker-dashboard --filter admin-dashboard build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
